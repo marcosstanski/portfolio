@@ -5,70 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFÓLIO</title>
     <style>
-        body{
-            background-image: url(https://neilpatel.com/wp-content/uploads/2017/12/portfolio-700x467.jpg);
-            background-size: cover; 
+        body {
+            background: linear-gradient(black, rgb(180, 7, 7), black);
+            background-size: cover;
             background-position: center;
-            width: 100%;
-            height: 100vh;
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;           
+            flex-direction: column;
         }
 
-            header{
-            background: #000000;
-            padding: 7px;
-            color: #ffff;
-            text-align: center;
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
         }
 
-            nav{
-            background-color: #3608ee;
-            padding: 10px;
-            text-align: center;
-        }
-
-            .nav-link{
-                color: white;
-                text-decoration: none;
-                padding: 10px;
-                border-radius: 5px;
-                transition: background-color 0.3s;
-            }
-
-            .nav-link:hover{
-                background-color: #ffffff;
-            }
-
-        section {
-            padding: 18px;
-        }
-
-            footer{
-            background-color: #000000;
-            color: aqua;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%
-        }
-
-            p{
-            color: rgb(0, 255, 0);
-            font-size: 50px;
-        }
-
-        .container {
-            display: block;
-            width: 80%;
-            margin: auto;
+        .avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
             overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .hero {
-            background-color: #ffffff;
+            background-color: #FFFFFF;
             padding: 50px 0;
             text-align: center;
         }
@@ -85,13 +59,17 @@
 
         .product {
             display: inline-block;
-            width: 200px;
+            width: 300px; 
+            min-height: 200px; 
             margin: 0 10px;
-            background-color: #fff;
+            background-color: #000000;
             padding: 15px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             vertical-align: top;
+            border-radius: 8px;
+            color: crimson;
+            overflow-y: auto; 
         }
 
         .product img {
@@ -100,94 +78,81 @@
         }
 
         .product h3 {
-            color: #ff0000;
-            font-size: 18px;
+            font-size: 16px; 
             margin: 10px 0;
         }
 
         .product p {
             font-size: 14px;
-            color: #ff0000;
+            color: crimson;
+            white-space: normal;
         }
+        @media screen and (max-widht: 768px) {
+            .container {
+                display: block;
+                background-image: none;
+            }
 
-        .product button {
-            background-color: #d510db;
-            color: #fff;
-            border: none;
-            padding: 8px 15px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            margin-top: 10px;
-        }
+            .container_image {
+                width: 50vw;
+            }
 
-        .product button:hover {
-            background-color: #575757;
-        }
+                .container_caixa {
+                    margin: 2em 2em;
+                }
+
+                .secundario {
+                    margin: 0;
+                    text-align: center;
+                }
+
+                .secundario_image {
+                    width: 50vw;
+                }
+
+                .dispositivos_lista {
+                    display: block;
+                }
+
+                .rodape_lista {
+                    display: block;
+                }
+        } 
+
 
     </style>
-</html>
-
-		
 </head>
 <body>
-    <header>
 
-        <a class="nav-link" href="#home">Home</a>
-        <a class="nav-link" href="#books"></a>
-        <a class="nav-link" href="#children-books"></a>
-
-    </nav>
-    </header>
-
-    
-    <nav>
-        <div id="divBuscar">
-        <p>PORTFÓLIO DO CARAMBA</p>
+    <div class="header">
+        <div class="avatar">
+            <a href="index2.html"><img src="https://media.tenor.com/ElbgxcWgYpIAAAAe/fatal-error-sans-undertale-au.png" alt="Avatar"></a>
         </div>
-       <p></p>
-       <p></p>
-       <p></p>
-       <p></p>
-     </button>
-         
-    </nav>
+    </div>
 
-    <div class="container">
-        <h2 id="books">Livraria</h2>
+    <div class="hero" id="home"></div>
+        <div class="container">
+        </div>
+    </div>
+<div class="container">
         <div class="products-container">
             <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV-TLVtKCDNF4eMEOFRYUF5PhLWeGqHMWYwg&s" width="100" height="300">
-        <h3>Bem vindo</h3>
-        <p>Ache os livros qe eu tive vontade<br>
-             de colocar🥱💤</p><br>
-        <p>Aqui você acha todos os livros que<br>
-            eu coloquei durante o projeto<br>
-             da Aula de<br>
-            Programação do meu Colégio<br>
-             Estadual Profª<br>
-             Maria Luiza Franco Pacheco</p><br>
-             <a href="https://agrinho-five-eta.vercel.app/"><STRONG>ENTRE!</STRONG></a>
-            
-            </div>   
-        </div>     
+                <img src="20241015_200632.jpg" alt="" height="" width="">
+                <p>Um site de flashcards é uma plataforma digital onde usuários podem criar, compartilhar e estudar cartões de memória para auxiliar na memorização de informações. Esses sites geralmente permitem a criação de conjuntos personalizados de flashcards com perguntas e respostas, imagens ou definições. Muitos deles possuem ferramentas de repetição espaçada e quiz para ajudar na retenção de conhecimento, sendo úteis para estudantes e profissionais que desejam revisar conteúdos de forma prática e eficiente. Exemplos populares incluem Quizlet, Anki e Brainscape.</p>
+<a href="https://flash-card-lyart.vercel.app/">Visit Page</a>
+            </div>
+            <div class="product">
+                <img src="20241015_200611.jpg" alt="" height="" width="">
+                <p>Um site de livraria é uma plataforma online onde os usuários podem comprar livros físicos e digitais. Esses sites geralmente oferecem uma ampla variedade de títulos, incluindo livros de ficção, não-ficção, didáticos e infantis, além de revistas e e-books. Muitos permitem a busca por autor, título ou gênero, e fornecem descrições, resenhas, e recomendações para ajudar na escolha. Alguns sites, como Amazon e Saraiva, oferecem entrega e serviços de assinatura, enquanto outros, como Kindle e Kobo, são focados em e-books e leitura digital.</p>
+<a href="https://livraria-do-aluno-digital-m987.vercel.app/index2.html">Visit Page</a>
+            </div>
+            <div class="product">
+                <img src="20241015_195708.jpg" alt="" height="" width="">
+                <p>Um site de filmes é uma plataforma online onde usuários podem acessar informações sobre filmes, incluindo sinopses, trailers, críticas, e avaliações. Alguns desses sites oferecem streaming de filmes e séries, enquanto outros funcionam como bancos de dados, fornecendo detalhes sobre elenco, equipe, datas de lançamento e gêneros. Plataformas de streaming, como Netflix e Amazon Prime Video, permitem assistir aos filmes diretamente, enquanto sites como IMDb e Rotten Tomatoes ajudam na pesquisa e recomendação de filmes com base nas classificações e resenhas.</p>
+<a href="https://filmes-black.vercel.app/">Visit Page</a>
+            </div>
+        </div>
+    </div>
 
-        
-
-    <footer>&copy; 2024 Livraria Online</footer>
-
-
-    <script>
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-    
 </body>
 </html>
